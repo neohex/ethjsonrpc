@@ -1,3 +1,9 @@
+PIP install from fork
+==========================
+.. code:: bash
+
+   $ pip install -e git+git@github.com:jerry-sl/ethjsonrpc.git@cita#egg=ethjsonrpc
+
 ethjsonrpc
 ==========
 

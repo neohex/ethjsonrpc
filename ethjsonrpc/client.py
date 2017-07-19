@@ -130,6 +130,17 @@ class EthJsonRpc(object):
                                         gas_price=gas_price, value=value)
 
 ################################################################################
+# CITA JSON-RPC methods
+################################################################################
+    def cita_getBlockByNumber(self, block=BLOCK_TAG_LATEST, tx_objects=True):
+        '''
+        https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getblockbynumber
+
+        TESTED
+        '''
+        block = validate_block(block)
+        return self._call('cita_getBlockByNumber', [block, tx_objects])
+################################################################################
 # JSON-RPC methods
 ################################################################################
 
